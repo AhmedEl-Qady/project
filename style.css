@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif", serif;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-padding-top: 58px;
+}
+body {
+  /* overflow-x: hidden; */
+  height: 97.8%;
+  background-color: rgb(25, 25, 25);
+}
+nav {
+  background-color: rgb(25, 25, 25);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.container {
+  color: white;
+  margin: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  padding: 10px;
+  margin: auto;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container #Subscribe {
+  transition: 0.3s;
+  scale: 1;
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: rgb(251, 181, 2);
+}
+.container #Logo {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+.container span {
+  color: goldenrod;
+}
+a:hover {
+  color: rgb(0, 255, 0);
+}
+#Subscribe:hover {
+  scale: 1.2;
+  background-color: #02020200;
+  color: white;
+}
+/* ============================================= */
+section {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+section .rigth {
+  margin-left: 4rem;
+  line-height: 3.5rem;
+  color: white;
+  letter-spacing: 5px;
+}
+.rigth a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 5px;
+  transition: 0.5s;
+  background-color: gold;
+}
+#CV:hover {
+  color: #000;
+  scale: 1.2;
+}
+.rigth h1 {
+  font-size: 3rem;
+  transform: translate(0, 0);
+  transition: 0.5s;
+}
+.rigth h1:hover {
+  transform: translate(5px, 0);
+}
+.rigth h1 span {
+  color: goldenrod;
+}
+/* ============================================= */
+section .left {
+  height: 95%;
+  width: 50%;
+}
+.left:hover #background {
+  opacity: 0.5;
+  translate: 0 5px;
+}
+.left #person {
+  height: 39rem;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  translate: 0 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.left #person:hover {
+  translate: 20px 0;
+}
+.left #background {
+  opacity: 0.8;
+  height: 37rem;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  translate: 0 0;
+  transition: 0.5s;
+  top: 5rem;
+}
+/* ======================page two=============== */
+.content {
+  height: 100vh;
+  display: flex;
+  padding: 0 10rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content header h2 {
+  text-align: center;
+  width: 100%;
+  padding-top: 2.5rem;
+  font-size: 40px;
+  color: rgb(251, 181, 2);
+}
+.content h2 span {
+  color: white;
+}
+.content section {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.content .left2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.content .left2 #person2 {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  transition: 0.5s;
+}
+.content .left2 .border {
+  height: 15rem;
+  width: 15rem;
+  border: 5px orangered solid;
+}
+.content .rigth2 {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.content .rigth2 span {
+  color: goldenrod;
+}
+.content .rigth2 .name,
+.text {
+  line-height: 1.5rem;
+}
+.content .rigth2 .text {
+  padding-right: 10rem;
+}
+.content .rigth2 .info1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding-right: 10rem;
+}
+
+.info1 .inf1 .Name,
+.Phone {
+  color: goldenrod;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content .rigth2 .info2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding-right: 5rem;
+}
+
+.info2 .inf1 .country,
+.Email {
+  font-weight: bold;
+  color: goldenrod;
+  text-align: center;
+}
+.content .rigth2 .info3 {
+  margin: 3rem 0 3rem 3rem;
+}
+.content .rigth2 .info3 .Education {
+  text-align: center;
+  color: goldenrod;
+  margin-bottom: 0.3rem;
+  transform: translate(-6rem, 0);
+}
+.content .rigth2 .Social {
+  display: flex;
+  justify-content: center;
+  margin-right: 10rem;
+}
+.content .rigth2 .Social a {
+  margin-left: 10px;
+}
+
+/* ==========================Page3================ */
+
+.Skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.Skills header h2 {
+  color: goldenrod;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-right: 8rem;
+}
+.Skills section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 6rem);
+  padding: 1rem 0 0 13rem;
+  grid-template-areas:
+    "photoshop photography"
+    "illustrator premierepro"
+    "aftereffect XD"
+    "Autodesk cinema";
+}
+
+.Skills section .photoshop {
+  grid-area: photoshop;
+  background-color: #eee;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  height: 10px;
+}
+.Skills section .photography {
+  grid-area: photography;
+  background-color: #eee;
+  display: flex;
+  width: 250px;
+  height: 10px;
+}
+.Skills section .illustrator {
+  grid-area: illustrator;
+  background-color: #eee;
+  display: flex;
+  width: 250px;
+  height: 10px;
+}
+.Skills section .premierepro {
+  grid-area: premierepro;
+  background-color: #eee;
+  display: flex;
+  width: 250px;
+  height: 10px;
+}
+.Skills section .aftereffect {
+  grid-area: aftereffect;
+  background-color: #eee;
+  display: flex;
+  width: 250px;
+  height: 10px;
+}
+.Skills section .XD {
+  grid-area: XD;
+  background-color: #eee;
+  display: flex;
+  width: 250px;
+  height: 10px;
+}
+.Skills section .Autodesk {
+  grid-area: Autodesk;
+  background-color: #eee;
+  display: flex;
+  width: 250px;
+  height: 10px;
+}
+.Skills section .cinema {
+  grid-area: cinema;
+  display: flex;
+  background-color: #eee;
+  width: 250px;
+  height: 10px;
+}
+.photoshop::before {
+  content: "";
+  background-color: goldenrod;
+  width: 200px;
+  height: 10px;
+}
+.photography::before {
+  content: "";
+  background-color: goldenrod;
+  width: 200px;
+  height: 10px;
+}
+.illustrator::before {
+  content: "";
+  background-color: goldenrod;
+  width: 150px;
+  height: 10px;
+}
+.premierepro::before {
+  content: "";
+  background-color: goldenrod;
+  width: 200px;
+  height: 10px;
+}
+.aftereffect::before {
+  content: "";
+  background-color: goldenrod;
+  width: 250px;
+  height: 10px;
+}
+.XD::before {
+  content: "";
+  background-color: goldenrod;
+  width: 200px;
+  height: 10px;
+}
+.Autodesk::before {
+  content: "";
+  background-color: goldenrod;
+  width: 240px;
+  height: 10px;
+}
+.cinema::before {
+  content: "";
+  background-color: goldenrod;
+  width: 230px;
+  height: 10px;
+}
+.Skills section p {
+  width: fit-content;
+  height: fit-content;
+  color: white;
+}
+.container1::after {
+  content: "95%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.container2::after {
+  content: "90%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.container3::after {
+  content: "70%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.container4::after {
+  content: "92%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.container5::after {
+  content: "100%";
+  color: white;
+  padding-left: 13rem;
+}
+.container6::after {
+  content: "95%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.container7::after {
+  content: "99%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.container8::after {
+  content: "98%";
+  color: white;
+  padding-left: 13.5rem;
+}
+.Skills footer {
+  height: 9rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-right: 5rem;
+  color: white;
+}
