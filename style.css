@@ -247,6 +247,7 @@ section .left {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  margin-left: 90px;
 }
 .Skills header h2 {
   color: goldenrod;
@@ -254,6 +255,7 @@ section .left {
   text-align: center;
   font-size: 50px;
   padding-right: 8rem;
+  padding-left: 50px;
 }
 .Skills section {
   display: grid;
